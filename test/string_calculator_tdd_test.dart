@@ -9,4 +9,8 @@ void main() {
   test('Single number returns the number itself', () {
     expect(add("5"), equals(5));
   });
+
+  test('Two numbers returns their sum', () {
+    expect(add("1,2"), equals(3));
+  });
 }
