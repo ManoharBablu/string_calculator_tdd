@@ -13,4 +13,8 @@ void main() {
   test('Two numbers returns their sum', () {
     expect(add("1,2"), equals(3));
   });
+
+  test('Multiple numbers returns their sum', () {
+    expect(add("1,2,3,4"), 10);
+  });
 }
