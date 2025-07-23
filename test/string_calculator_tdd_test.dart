@@ -17,4 +17,12 @@ void main() {
   test('Multiple numbers returns their sum', () {
     expect(add("1,2,3,4"), 10);
   });
+
+  test('Support newlines as delimiters', () {
+    expect(add("1\n2,3"), 6);
+  });
+
+  test('Support custom delimiters', () {
+    expect(add("//;\n1;2"), 3);
+  });
 }
